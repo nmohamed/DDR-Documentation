@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>DDR</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dance Dance Revolution for Olin Principles of Engineering 2016">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Source+Sans+Pro|VT323" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+    crossorigin="anonymous"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+
+</head>
+<body>
+
+	<div id="holder">
+		<center><span id="title">Dance Dance Revolution</span></center>
+		<a name="software"></a>
+
+		<div id="header-spacer" class="spacer-with-nav">-</div>
+		<div id="header-holder">
+			<div id="header">
+				<h2><a href="./index.html">HOME</a> ▰ PLAY ▰ <a href="./design.html">DESIGN</a> ▰ <a href="./progress.html">PROCESS</a> ▰ <a href="./team.html">TEAM</a></h2>
+			</div>
+			<div id="navigation">
+				<a href="./software.html">Software</a> | <a href="./mechanical.html">Mechanical</a> | <a href="./electrical.html">Electrical</a> | <a href="./materials.html">Materials</a>
+			</div>
+		</div>
+
+		<br>
+
+		<div id="design">
+			<h2>Mechanical</h2>
+			<p>
+				There are 4 different types of "pads" within the board.
+				<br>
+				<img src="">
+				<b>Arrow piece</b>: This is the piece that you step on to play the game.
+				<br>
+				<img src="">
+				<b>Electrical house</b>: This is where the Arduino and breadboard are housed. All wires from the arrow pieces flow into here. Has an inner structure similar to the arrow piece to allow for wires to pass through and for the Arduino/breadboard to stay in.
+				<br>
+				<img src="">
+				<b>Center piece</b>: The middle piece of the board. In order to allow for wires from all the different pieces to travel through to the electrical house, the center piece has a path through it for wires to go through. Otherwise, they're the same as corner pieces.
+				<br>
+				<img src="">
+				<b>Corner piece</b>: Slabs of wood. Since nothing needs to be inside of the remaining corner pieces, these are made from stacks of wood to match the height of the other pieces.
+			</p>
+
+		</div>
+		<br>
+	</div>
+
+</body>
+<script type="text/javascript" src=".\js\controller.js"></script>
+</html>

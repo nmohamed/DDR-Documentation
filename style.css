@@ -116,3 +116,22 @@ h2 {
 	margin: auto;
 	padding: 10px;
 }
+
+/*ELECTRICAL*/
+.text-wrap-right {
+	clear: left;
+	float: right;
+	margin: 10px;
+}
+
+.text-wrap-left {
+	clear: right;
+	float: left;
+	margin: 10px;
+}
+
+.electrical-element {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}

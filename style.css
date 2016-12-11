@@ -134,11 +134,12 @@ h2 {
 	top: 0px;
 	position: fixed;
 	line-height: 20px;
+    border-bottom: 3px solid #fff;
 }
 
 #header {
 	overflow: auto;
-	background-color: #330f66;
+	background-color: #110011;
 	padding: 0px 10px 0px 10px;
 }
 
@@ -241,4 +242,20 @@ h2 {
 
 .image-circle {
 	border-radius: 50%;
+	margin: auto;
+	height: 190px;
+	width: 190px;
+}
+
+.team-member {
+	width: 260px;
+	text-align: justify;
+    text-justify: inter-word;
+    margin: 20px;
+}
+
+#team-holder {
+	max-width: 500px;
+	margin: auto;
+	display: flex;
 }

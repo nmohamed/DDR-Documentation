@@ -29,6 +29,11 @@ b {
 	animation: gradient 4s ease infinite;
 }
 
+b.normal {
+	color: #fff;
+	background: none;
+}
+
 a {
 	color: #fff;
 	text-decoration: none;
@@ -182,6 +187,35 @@ h2 {
 	max-width: 600px;
 	margin: auto;
 	padding: 10px;
+}
+
+/*MECHANICAL*/
+
+#mech-labels {
+	max-width: 100%;
+}
+
+#exploded {
+	max-width: 50%;
+	min-width: 300px;
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+	margin-bottom: 20px
+}
+
+#corner-piece {
+	max-width: 50%;
+	float: right;
+	margin-left: 20px;
+}
+
+#center-piece {
+	width: 220px;
+	height: 220px;
+	float: left;
+	clear: right;
+	margin-right: 20px;
 }
 
 /*ELECTRICAL*/

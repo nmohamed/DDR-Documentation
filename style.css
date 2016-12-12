@@ -29,6 +29,11 @@ b {
 	animation: gradient 4s ease infinite;
 }
 
+b.normal {
+	color: #fff;
+	background: none;
+}
+
 a {
 	color: #fff;
 	text-decoration: none;
@@ -42,7 +47,7 @@ a:hover {
 }
 
 .animate-text {
-	background: -webkit-linear-gradient(144deg, #76cca8, #e017ff, #ff6e48, #c2ff33);
+	background: -webkit-linear-gradient(144deg, #e017ff, #ff6e48);
 	background-size: 600% 600%;
   	-webkit-text-fill-color: transparent;
   	background-clip: text;
@@ -111,6 +116,14 @@ h2 {
 	margin: 0px;
 }
 
+h3 {
+	font-family: 'VT323', monospace;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+	margin: 0px;
+	border-bottom: #fff solid;
+}
+
 #holder {
 	top: 0px;
 	left: 0px;
@@ -129,11 +142,12 @@ h2 {
 	top: 0px;
 	position: fixed;
 	line-height: 20px;
+    border-bottom: 3px solid #fff;
 }
 
 #header {
 	overflow: auto;
-	background-color: #330f66;
+	background-color: #110011;
 	padding: 0px 10px 0px 10px;
 }
 
@@ -184,6 +198,35 @@ h2 {
 	padding: 10px;
 }
 
+/*MECHANICAL*/
+
+#mech-labels {
+	max-width: 100%;
+}
+
+#exploded {
+	max-width: 50%;
+	min-width: 300px;
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+	margin-bottom: 20px
+}
+
+#corner-piece {
+	max-width: 50%;
+	float: right;
+	margin-left: 20px;
+}
+
+#center-piece {
+	width: 220px;
+	height: 220px;
+	float: left;
+	clear: right;
+	margin-right: 20px;
+}
+
 /*ELECTRICAL*/
 .text-wrap-right {
 	clear: left;
@@ -207,4 +250,20 @@ h2 {
 
 .image-circle {
 	border-radius: 50%;
+	margin: auto;
+	height: 190px;
+	width: 190px;
+}
+
+.team-member {
+	width: 260px;
+	text-align: justify;
+    text-justify: inter-word;
+    margin: 20px;
+}
+
+#team-holder {
+	max-width: 500px;
+	margin: auto;
+	display: flex;
 }

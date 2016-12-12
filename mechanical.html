@@ -22,7 +22,7 @@
 		<div id="header-spacer" class="spacer-with-nav">-</div>
 		<div id="header-holder">
 			<div id="header">
-				<h2><a href="./index.html">HOME</a> ▰ <a href="https://poeddr.herokuapp.com">PLAY</a> ▰ <a href="./design.html">DESIGN</a> ▰ <a href="./progress.html">PROCESS</a> ▰ <a href="./team.html">TEAM</a></h2>
+				<h2><a href="./index.html">HOME</a> <img src="./images/spacer.png" class="spacer-img"> <a href="https://poeddr.herokuapp.com">PLAY</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./design.html">DESIGN</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./progress.html">PROCESS</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./team.html">TEAM</a></h2>
 			</div>
 			<div id="navigation">
 				<a href="./software.html">Software</a> | <a href="./mechanical.html">Mechanical</a> | <a href="./electrical.html">Electrical</a> | <a href="./materials.html">Materials</a>
@@ -32,21 +32,42 @@
 		<br>
 
 		<div id="design">
-			<h2>Mechanical</h2>
+			<h1>Mechanical</h1>
+			<img src="./images/mech_labels.png" id="mech-labels">
 			<p>
-				There are 4 different types of "pads" within the board.
+				There are 4 different types of "pieces" within the board.
+			</p>
+			<h2>Arrow Piece</h2>
+		</div>
+		<div style="max-width: 850px; margin: auto;">
+			<img src="./images/exploded.png" id="exploded">
+			<br>
+			<div style="margin-left:10px;">
+				This is the piece that you step on to play the game.
 				<br>
-				<img src="">
-				<b>Arrow piece</b>: This is the piece that you step on to play the game.
-				<br>
-				<img src="">
-				<b>Electrical house</b>: This is where the Arduino and breadboard are housed. All wires from the arrow pieces flow into here. Has an inner structure similar to the arrow piece to allow for wires to pass through and for the Arduino/breadboard to stay in.
-				<br>
-				<img src="">
-				<b>Center piece</b>: The middle piece of the board. In order to allow for wires from all the different pieces to travel through to the electrical house, the center piece has a path through it for wires to go through. Otherwise, they're the same as corner pieces.
-				<br>
-				<img src="">
-				<b>Corner piece</b>: Slabs of wood. Since nothing needs to be inside of the remaining corner pieces, these are made from stacks of wood to match the height of the other pieces.
+				<b class="normal">1:</b><br>
+				<b class="normal">2:</b><br>
+				<b class="normal">3:</b><br>
+				<b class="normal">4:</b><br>
+				<b class="normal">5:</b><br>
+				<b class="normal">6:</b><br>
+			</div>
+		</div>
+		<div id="design" style="clear: left;">
+			<h2>Electrical House</h2>
+			<p>
+				This is where the Arduino and breadboard are housed. All wires from the arrow pieces flow into here. Has an inner structure similar to the arrow piece to allow for wires to pass through and for the Arduino/breadboard to stay in.
+			</p>
+			<h2>Corner Piece</h2>
+			<p>
+				<img src="./images/corner.png" id="corner-piece">
+				Slabs of wood. Since nothing needs to be inside of the remaining corner pieces, these are made from stacks of wood to match the height of the other pieces.
+			</p>
+			<h2 style="float: right;">Center Piece</h2>
+			<img src="./images/center.png" id="center-piece">
+			<br><br>
+			<p style="clear: right">
+				The middle piece of the board. In order to allow for wires from all the different pieces to travel through to the electrical house, the center piece has a path through it for wires to go through. Otherwise, they're the same as corner pieces.
 			</p>
 
 		</div>

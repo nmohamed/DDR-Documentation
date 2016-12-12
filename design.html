@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>DDR</title>
+	<title>groovn' n' movin'</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Dance Dance Revolution for Olin Principles of Engineering 2016">
 	<link href="https://fonts.googleapis.com/css?family=Audiowide|Source+Sans+Pro|VT323" rel="stylesheet">
@@ -16,13 +16,13 @@
 <body>
 
 	<div id="holder">
-		<center><span id="title">Dance Dance Revolution</span></center>
+		<center><span id="title" class="animate-text">groovn' n' movin'</span></center>
 		<a name="software"></a>
 
 		<div id="header-spacer" class="spacer-with-nav">-</div>
 		<div id="header-holder">
 			<div id="header">
-				<h2><a href="./index.html">HOME</a> ▰ <a href="https://poeddr.herokuapp.com">PLAY</a> ▰ <a href="./design.html">DESIGN</a> ▰ <a href="./progress.html">PROCESS</a> ▰ <a href="./team.html">TEAM</a></h2>
+				<h2><a href="./index.html">HOME</a> <img src="./images/spacer.png" class="spacer-img"> <a href="https://poeddr.herokuapp.com">PLAY</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./design.html">DESIGN</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./progress.html">PROCESS</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./team.html">TEAM</a></h2>
 			</div>
 			<div id="navigation">
 				<a href="./software.html">Software</a> | <a href="./mechanical.html">Mechanical</a> | <a href="./electrical.html">Electrical</a> | <a href="./materials.html">Materials</a>
@@ -32,10 +32,38 @@
 		<br>
 
 		<div id="design">
-			<h2>Design</h2>
+			<h1>Design</h1>
 			<p>
 				Keep the rythm and dance movement going, 'cause we're bringing to you <b>DANCE DANCE REVOLUTION</b>! We've brought back everyone's facorite arcade game, accessible in a polished and easy to play mode. Play our web game, with our homebrew pad or your handy-dandy keyboard.
 			</p>
+
+			<h2>Overview</h2>
+			<p>We all love groovn' n' movin', so we wanted to make a DDR game that integratesa web component
+			and mechanical/electrical board. We were inspired by the original DDR game, and wanted to add a
+			web element so that people could play it without a TV available. In addition, we were really interested
+			in creating an engaging and structurally-sound dance board that people could dance and jump on.</p>
+			<h2>Project Goals</h2>
+				<ul>
+					<li>Successful software, mechanical and electrical integration to create a responsive DDR game
+						from board to website!</li>
+					<li>The mechanical board supports human weight and house electrical wires and arduino</li>
+					<li>Pressure sensors calibrated and synced with our web game</li>
+					<li>Aesthetically pleasing and interactive board and web game</li>
+					<li>Document our process and integration</li>
+				</ul>
+			<h2>System Diagram</h2>
+			<img width="100%" src="images/systemDiagram.png"/>
+			<p>In short, our system functions as follows: </p>
+			<ol>
+				<li>The website sends the board data through the arduino serialport. This data includes which step should be stepped
+				on next (in 3 seconds). The LEDs of that step light up a blue color.</li>
+				<li>An arrow that matches the step starts floating up on the website</li>
+				<li>After 3 seconds, the arrow should match the top arrows, and if the step is correctly stepped on at that time,
+					data will be extracted from the pressure sensor and will indicate that it's been stepped on.
+					If stepped on correctly, the LEDs turn green for that moment, but if the step has not been correctly stepped on, the LEDs turn red.
+				</li>
+				<li>The website also updates the score to take into account the score increase or deduction.</li>
+			</ol>
 		</div>
 		<br>
 	</div>

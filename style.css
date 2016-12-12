@@ -18,8 +18,20 @@ p {
 
 b {
 	color: #110011;
-	background-color: #fff;
 	padding: 0px 2px 0px 2px;
+	background: #fff;
+	background: -webkit-linear-gradient(144deg, #76cca8, #e017ff, #ff6e48, #c2ff33);
+	background-size: 600% 600%;
+
+	-webkit-animation: gradient 4s ease infinite;
+	-moz-animation: gradient 4s ease infinite;
+	-o-animation: gradient 4s ease infinite;
+	animation: gradient 4s ease infinite;
+}
+
+b.normal {
+	color: #fff;
+	background: none;
 }
 
 a {
@@ -29,16 +41,63 @@ a {
 
 a:hover {
 	transition: color 0.2s ease;
-	color: #b2ff2d;
+	/*color: #66ffcc;*/
 	text-decoration: none;
+	text-shadow: 0px 0px 10px #66ffcc;
+}
+
+.animate-text {
+	background: -webkit-linear-gradient(144deg, #e017ff, #ff6e48);
+	background-size: 600% 600%;
+  	-webkit-text-fill-color: transparent;
+  	background-clip: text;
+  	-moz-background-clip: text;
+  	-webkit-background-clip: text;
+	-webkit-animation: gradient 4s ease infinite;
+	-moz-animation: gradient 4s ease infinite;
+	-o-animation: gradient 4s ease infinite;
+	animation: gradient 4s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.spacer-img {
+	width: 20px;
+	height: 15px;
+}
+
+@font-face {
+    font-family: 'alba';
+    src: url('./fonts/alba_reg.TTF');
 }
 
 span#title {
-	font-family: 'Audiowide', cursive;
+	font-family: 'alba';
 	font-weight: normal;
 	font-size: 50px;
 	line-height: 1.5em;
 	margin: 0px;
+	/*margin-bottom: 10px;*/
 }
 
 h1 {
@@ -55,6 +114,14 @@ h2 {
 	letter-spacing: 3px;
 	line-height: 1.5em;
 	margin: 0px;
+}
+
+h3 {
+	font-family: 'VT323', monospace;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+	margin: 0px;
+	border-bottom: #fff solid;
 }
 
 #holder {
@@ -75,13 +142,18 @@ h2 {
 	top: 0px;
 	position: fixed;
 	line-height: 20px;
+    border-bottom: 3px solid #fff;
 }
 
 #header {
 	overflow: auto;
-	background-color: #ff3366;
+	background-color: #110011;
 	padding: 0px 10px 0px 10px;
 }
+
+/*orange: #ff6e48*/
+/*purple: #330f66*/
+/*cyan: #76cca8*/
 
 #header-spacer {
 	line-height: 1.95em;
@@ -96,6 +168,15 @@ h2 {
 /*INDEX*/
 
 #landing {
+	max-width: 400px;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+}
+
+#landing-img {
+	max-width: 100%;
+	height: auto;
 }
 
 
@@ -107,7 +188,7 @@ h2 {
 	letter-spacing: 3px;
 	font-size: 20px;
 	line-height: 1.5em;
-	background-color: #5ee1ff;
+	background-color: #ff6e48;
 	padding-left: 10px;
 }
 
@@ -115,6 +196,35 @@ h2 {
 	max-width: 600px;
 	margin: auto;
 	padding: 10px;
+}
+
+/*MECHANICAL*/
+
+#mech-labels {
+	max-width: 100%;
+}
+
+#exploded {
+	max-width: 50%;
+	min-width: 300px;
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+	margin-bottom: 20px
+}
+
+#corner-piece {
+	max-width: 50%;
+	float: right;
+	margin-left: 20px;
+}
+
+#center-piece {
+	width: 220px;
+	height: 220px;
+	float: left;
+	clear: right;
+	margin-right: 20px;
 }
 
 /*ELECTRICAL*/
@@ -134,4 +244,26 @@ h2 {
 	display: inline-block;
 	position: relative;
 	width: 100%;
+}
+
+/*TEAM*/
+
+.image-circle {
+	border-radius: 50%;
+	margin: auto;
+	height: 190px;
+	width: 190px;
+}
+
+.team-member {
+	width: 260px;
+	text-align: justify;
+    text-justify: inter-word;
+    margin: 20px;
+}
+
+#team-holder {
+	max-width: 500px;
+	margin: auto;
+	display: flex;
 }

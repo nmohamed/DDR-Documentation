@@ -121,13 +121,13 @@ h2 {
 .text-wrap-right {
 	clear: left;
 	float: right;
-	margin: 10px;
+	margin: 15px;
 }
 
 .text-wrap-left {
 	clear: right;
 	float: left;
-	margin: 10px;
+	margin: 15px;
 }
 
 .electrical-element {

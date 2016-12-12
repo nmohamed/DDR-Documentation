@@ -47,7 +47,7 @@ a:hover {
 }
 
 .animate-text {
-	background: -webkit-linear-gradient(144deg, #76cca8, #e017ff, #ff6e48, #c2ff33);
+	background: -webkit-linear-gradient(144deg, #e017ff, #ff6e48);
 	background-size: 600% 600%;
   	-webkit-text-fill-color: transparent;
   	background-clip: text;
@@ -114,6 +114,14 @@ h2 {
 	letter-spacing: 3px;
 	line-height: 1.5em;
 	margin: 0px;
+}
+
+h3 {
+	font-family: 'VT323', monospace;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+	margin: 0px;
+	border-bottom: #fff solid;
 }
 
 #holder {

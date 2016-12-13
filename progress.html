@@ -21,17 +21,17 @@
 		<div id="header-spacer" class="spacer-with-nav">-</div>
 		<div id="header-holder">
 			<div id="header">
-				<h2><a href="./index.html">HOME</a> <img src="./images/spacer.png" class="spacer-img"> <a href="https://poeddr.herokuapp.com">PLAY</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./design.html">DESIGN</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./progress.html">PROCESS</a> <img src="./images/spacer.png" class="spacer-img"> <a href="./team.html">TEAM</a></h2>
+				<h2><a href="./index.html">HOME</a> ▰ <a href="https://poeddr.herokuapp.com">PLAY</a> ▰ <a href="./design.html">DESIGN</a> ▰ <a href="./progress.html">PROCESS</a> ▰ <a href="./team.html">TEAM</a></h2>
 			</div>
 			<div id="navigation">
-				<a href="#goals">Goals</a> | <a href="#sprint1">Sprint 1</a> | <a href="#sprint2">Sprint 2</a> | <a href="#sprint3">Sprint 3</a>
+				<a href="#sprint1">Sprint 1</a> | <a href="#sprint2">Sprint 2</a> | <a href="#sprint3">Sprint 3</a>
 			</div>
 		</div>
 
 		<br>
 
 		<div id="design">
-			<h1>Goals</h1>
+			<h3>Learning Goals</h3>
 			<p>None of us comes from a mechanical background, so we wanted to challenge ourselves to build a
 			wooden and structurally-sound board that would require us to understand materials and the
 			process of fabricating different components, utilizing the capabilities of the machine shop. In addition,
@@ -39,7 +39,7 @@
 			house the electrical components with the mechanical board, and communicate between the different electrical
 			components and a website. </p>
 			<br>
-			<h2>Individual Learning Goals:</h2>
+			<h4>Individual Learning Goals:</h4>
 			<p>Bill's Learning Goals: Learn about basic mechanical designs and materials. Get better working on a project that
 				involves different engineering aspects. Understand the basics to build up a website.</p>
 			<p>Casey's Learning Goals: Understand how electronics work in theory, as well as in real life. The complexities that
@@ -49,12 +49,16 @@
 			as well as challenge myself to learn how to think through mechanical designs.</p>
 			<p>Nora's Learning Goals: Learn about mechanical design and the fabrication process.</p>
 
-			<h1>Sprint Reviews</h1>
+			<h2>Sprint Reviews</h2>
 			<p>
 				Interested in how we progressed through this project? Below you can find details about how <b>POE DDR</b> came to be! Sprints were 2 weeks each
 			</p>
 			<br>
 			<section id="sprint1">
+				<br>
+				<br>
+				<br>
+				<br>
 				<h2>Sprint 1</h2>
 				<p>
 					Team DDR has been formed!
@@ -71,7 +75,7 @@
 					GreenSock (GSAP). We designed and made initial MVP web pages that implements the basics of our DDR game.
 					In addition, we started working on the communication between Arduino and web through the Node.js package called Serialport.
 					We connected a 4-button strip to the Arduino, and integrated the Arduino with web, and finally we were able to identify and show which button is
-					pressed on the website. In terms of mechanical work, we came up with the idea of creating pieces that connect through dovetail joints, in addition
+					pressed on the website. In terms of mechanical work, we did research on the materials that can meet our need for the dance pad. We decided to use medium density fibreboard(MDF) as the base of the pad. Then we came up with the idea of creating pieces that connect through dovetail joints, in addition
 					we decided to go with polycarbonate to cover our LEDs and MDF with springs.
 					<br>
 					<br>
@@ -79,27 +83,33 @@
 					<iframe width="100%" src="https://docs.google.com/presentation/d/1b2mzAVpdVz_klJxGJH4kowPzWk5QyxH6Is6A9G4ladk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 				</p>
 			</section>
-			<br>
 			<section id="sprint2">
+				<br>
+				<br>
+				<br>
+				<br>
 				<h2>Sprint 2</h2>
 				<p>
-					During sprint 2, we worked on integrating pressure sensing to pads and to synchronize and send data between the arduino and the web game. We also used
+					During sprint 2, we pivoted from buttons to pressure sensors for our arrow piece, and we worked on integrating pressure sensing to pads and to synchronize and send data between the arduino and the web game. We also used
 					greensock to make animations for the web game, and started prototyping the wooden board pieces. One of the main decisions that we made this sprint was
-					to panel saw pieces to make more exact cuts, as well as transition to using laser cutting for more precise cuts.
+					to panel saw pieces to make more exact cuts, as well as transition to using laser cutting for more precise cuts. We made our first CAD of the arrow piece, which was a single 1/2" MDF with carved slots for pressure sensor and LED strips on it. In addition, after realizing that applying springs between MDF and polycarbonate would not be safe and stable enough, we started to think of better ways to attach the wood piece and polycarbonate. Finally we decided to put thin cardboards/foams between those pieces to enhance stability and enable pressure sensing.
 					<br>
 					<br>
 					Our Sprint Review 2 Presentation:
 					<iframe width="100%" src="https://docs.google.com/presentation/d/16rpsAhZfH3Ux7Mn-jXVJ4CY8_Y0yizgC9kwCaasRLN8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 				</p>
 		</section>
-		<br>
 		<section id="sprint3">
+			<br>
+			<br>
+			<br>
+			<br>
 			<h2>Sprint 3</h2>
 			<p>
 				We kept our website design, and integrated both the LED lighting system and pressure sensor to the web game to make sure that the timing for all of the arrows moving
 				are synchronized. In addition, we implemented Heroku App on the website which enabled us to create apps and connect databases.
 				Also, we put a playable song on the website which syncs with the game. We continued working on the website, and improved the UI design using Greensock animations to have play and
-				pause functionality. By integrating a LED with the Arduino and our website, we were able to light up the LED in different colors to show whether the player pressed the correct button at the correct time.
+				pause functionality. By integrating a LED with the Arduino and our website, we were able to light up the LED in different colors to show whether the player pressed the correct button at the correct time. On the mechanical part, we changed the design of the arrow piece for simplify the fabrication process. Instead of using one MDF piece with carved slots, we decided to put an arrow-shaped 1/4" MDF on top of the 1/2" MDF, and have a hole on the 1/2" MDF for wiring. We made the new CAD model based on our design, and fabricated our first arrow piece.
 				<br>
 				<br>
 				Our Sprint Review 3 Presentation:

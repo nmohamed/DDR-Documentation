@@ -35,11 +35,19 @@ b.normal {
 }
 
 a {
+	color: #ff6e48;
+}
+
+a:hover {
+	color: #66ffcc;
+}
+
+#header-holder a {
 	color: #fff;
 	text-decoration: none;
 }
 
-a:hover {
+#header-holder a:hover {
 	transition: color 0.2s ease;
 	/*color: #66ffcc;*/
 	text-decoration: none;
@@ -238,12 +246,6 @@ h3 {
 	clear: right;
 	float: left;
 	margin: 15px;
-}
-
-.electrical-element {
-	display: inline-block;
-	position: relative;
-	width: 100%;
 }
 
 /*TEAM*/

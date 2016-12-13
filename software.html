@@ -32,18 +32,15 @@
 		<br>
 
 		<div id="design">
-			<h2>Software</h2>
-			<h3>Software Goals</h3>
+			<h1>Software</h1>
+			<h2>Software Goals</h2>
 			<p>
-				We wanted to replicate the original DDR game design, but incorporate it into a website, instead
-				of a disk or game that you would typically put on a console. The goal for the player is to
-				hit the arrow pads at the right time. In addition, we wanted to provide a user interface that
-				made it easy to understand how to play the game, as well as performance score calculation that
-				updates in real-time.
+				We wanted to replicate the original design of <a href="https://en.wikipedia.org/wiki/Dance_Dance_Revolution">Dance Dance Revolution</a> (the game that this is based on, abbreviated as DDR), but incorporate it into a website, instead of a disk or game that you would typically put on a console. The goal for the player is to hit the arrow pads at the right time. In addition, we wanted to provide a user interface that made it easy to understand how to play the game, as well as performance score calculation that updates in real-time.
 				<br>
-				<br>
-				Here is an example of the original DDR game interface:
-				<img src="images/ddr.gif"/>
+				<center>
+					<img src="images/ddr.gif"/><br>
+					<i>Example of how DDR normally plays</i>
+				</center>
 				<br>
 				As a result, we wanted:
 				<ul>
@@ -53,19 +50,19 @@
 				</ul>
 			</p>
 
-			<h3>Our MVP Iteration</h3>
+			<h2>Our MVP Iteration</h2>
 			<p>We started our first sprint with coming up with a simple interface that includes all of our goals for the game. </p>
 			<iframe src="https://docs.google.com/presentation/d/1GzpR4eDCLpB4cA41HWDDpPlF8xqPW4olitT_Scd-4Ec/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 			<p>Our MVP has a game menu, and then starts the game, which follows the same interface that the original DDR game has with the scrolling arrows. </p>
 
-			<h3>Web Development Components</h3>
+			<h2>Web Development Components</h2>
 			<ul>
 				<li>Node.js: We used node.js, which is a JavaScript runtime that has an event-driven architecture capable of async I/O. This allows for real-time communication for programs and games. Node.js is also open-source, so there are a lot of written packages that can be linked to web applications very easily. In our web app, we use socket.io to do backend processing and be able to send data to the frontend that way.</li>
 				<li>GSAP: GSAP is a javascript library that allows for DOM animation. We use GSAP to animate the floating arrows for the game.</li>
 				<li>Serialport: In order to communicate with the arduino that is sending pressure sensor data, as well as receiving information on our end, regarding what step should be taken nect, we use the npm node.js package called Serialport. As long as the usb connecting the arduino to the computer is connected, we can receive and send data from both sides.</li>
 			</ul>
 
-			<h3>Our Final Implementation Interface</h3>
+			<h2>Our Final Implementation Interface</h2>
 			<p>The web game begins in the home page with a blurb about the game and instructions for how to play the game. If the user doesn't have the mechanical board, they can use their keyboard arrow keys to play the game.</p>
 			<img width="100%" src="images/homePage.png"/>
 			<p>Once the player, hits play, they must hit the space bar, in order to start the game. Once the game starts, the music, which we chose to be "Can't Be Tamed", by Miley Cyrus, and arrows start floating up the screen and the player must step on the corresponding step or keyboard arrow when the arrow floats and matches the top arrow. This process is illustrated in the following gif. In addition, the player can pause and play the game when they hit space bar.</p>

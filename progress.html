@@ -63,25 +63,24 @@
 			<section>
 				<h2>Sprint 1</h2>
 				<p>
-					Team DDR has been formed!
+					Team DDR has been formed! We wanted the board to:
 					<br>
+					<b class="normal">Have a good feel</b> - We wanted a DDR mat that felt solid and good to step on. This led us to make the board out of wood (MDF) instead of making a cloth pad.
 					<br>
-					Good feel: We wanted a DDR mat that felt solid and good to step on. This led us to make the board out of wood (MDF) instead of making a cloth pad.
+					<b class="normal">Be modular</b> - Since the board would probably be heavy, we wanted to make sure that you could easily move and disassemble the board.
 					<br>
-					<br>
-					Modular: Since the board would probably be heavy, we wanted to make sure that you could easily move and disassemble the board.
-					<br>
-					<br>
-					During sprint 1, we started to explore different web game designs for DDR, as well as web packages for game graphics. We decided to implement web
+					<center>
+						<img src="./images/s1.png" style="width:50%">
+					</center><br>
+					During Sprint 1, we started to explore different web game designs for DDR, as well as web packages for game graphics. We decided to implement web
 					package such as Phaser to make our web component, but then realized that we really just wanted an animation package for javascript, so we went with
-					GreenSock (GSAP). We designed and made initial MVP web pages that implements the basics of our DDR game.
+					GreenSock (GSAP). We designed and made initial MVP web pages that implement the basics of our DDR game.
 					In addition, we started working on the communication between Arduino and web through the Node.js package called Serialport.
 					We connected a 4-button strip to the Arduino, and integrated the Arduino with web, and finally we were able to identify and show which button is
 					pressed on the website. In terms of mechanical work, we did research on the materials that can meet our need for the dance pad. We decided to use medium density fibreboard(MDF) as the base of the pad. Then we came up with the idea of creating pieces that connect through dovetail joints, in addition
 					we decided to go with polycarbonate to cover our LEDs and MDF with springs.
 					<br>
 					<br>
-					Our Sprint Review 1 Presentation:
 					<iframe width="100%" src="https://docs.google.com/presentation/d/1b2mzAVpdVz_klJxGJH4kowPzWk5QyxH6Is6A9G4ladk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><span id="sprint2"></span>
 				</p>
 			</section>
@@ -94,12 +93,15 @@
 			<section>
 				<h2>Sprint 2</h2>
 				<p>
-					During sprint 2, we pivoted from buttons to pressure sensors for our arrow piece, and we worked on integrating pressure sensing to pads and to synchronize and send data between the arduino and the web game. We also used
-					greensock to make animations for the web game, and started prototyping the wooden board pieces. One of the main decisions that we made this sprint was
+					<center>
+					<img src="./images/s2_mech.png" style="width:100%"><br><br>
+					<img src="./images/cad1.png" style="width:50%"><br><br>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/eQftAQjoZDc" frameborder="0" allowfullscreen></iframe>
+					</center><br>
+					During sprint 2, we pivoted from buttons to pressure sensors for our arrow piece, and we worked on integrating pressure sensing to pads and to synchronize and send data between the arduino and the web game. We also used	greensock to make animations for the web game, and started prototyping the wooden board pieces. One of the main decisions that we made this sprint was
 					to panel saw pieces to make more exact cuts, as well as transition to using laser cutting for more precise cuts. We made our first CAD of the arrow piece, which was a single 1/2" MDF with carved slots for pressure sensor and LED strips on it. In addition, after realizing that applying springs between MDF and polycarbonate would not be safe and stable enough, we started to think of better ways to attach the wood piece and polycarbonate. Finally we decided to put thin cardboards/foams between those pieces to enhance stability and enable pressure sensing.
 					<br>
 					<br>
-					Our Sprint Review 2 Presentation:
 					<iframe width="100%" src="https://docs.google.com/presentation/d/16rpsAhZfH3Ux7Mn-jXVJ4CY8_Y0yizgC9kwCaasRLN8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><span id="sprint3"></span>
 				</p>
 		</section>
@@ -112,6 +114,11 @@
 		<section>
 			<h2>Sprint 3</h2>
 			<p>
+				<center>
+					<img src="./images/s3_pad.png"><br><br>
+					<img src="./images/s3_inner.png"><br><br>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Blm_NiPhUiI" frameborder="0" allowfullscreen></iframe>
+				</center><br>
 				We kept our website design, and integrated both the LED lighting system and pressure sensor to the web game to make sure that the timing for all of the arrows moving
 				are synchronized. In addition, we implemented Heroku App on the website which enabled us to create apps and connect databases.
 				Also, we put a playable song on the website which syncs with the game. We continued working on the website, and improved the UI design using Greensock animations to have play and
@@ -120,7 +127,6 @@
 				On the mechanical part, we changed the design of the arrow piece for simplify the fabrication process. Instead of using one MDF piece with carved slots, we decided to put an arrow-shaped 1/4" MDF on top of the 1/2" MDF, and have a hole on the 1/2" MDF for wiring. We made the new CAD model based on our design, and fabricated our first arrow piece.
 				<br>
 				<br>
-				Our Sprint Review 3 Presentation:
 				<iframe width="100%" src="https://docs.google.com/presentation/d/1TYUkmOxxWOBdbE1Rylzy_lCuaYJXErNnlx8uCUVcFbQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 			</p>
 		</section>

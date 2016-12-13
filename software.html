@@ -69,7 +69,7 @@
 				</a>
 				<br>
 				<br>
-				In terms of the software architecture, the arduino talks and sends pressure sensor data (depending on what arrows were pressed) to the backend of the website using Serialport, and then the backend sends data to the frontend using socket.io to utilize the pressure info to change the display of score and animation, depending on whether or not the correct step was stepped on. In addition, the front end sends the backend data about what each next step should be using socket.io, and then this data is sent to the arduino using Serialport to indicate which arrow LED needs to be turned on. A diagram of this can be found below.
+				In terms of the software architecture, the arduino talks and sends pressure sensor data (depending on what arrows were pressed) to the backend of the website using Serialport, and then the backend sends data to the frontend using socket.io to utilize the pressure info to change the display of score and animation, depending on whether or not the correct step was stepped on. In addition, the frontend sends the backend data about what each next step should be using socket.io, and then this data is sent to the arduino using Serialport to indicate which arrow LED needs to be turned on. A diagram of this can be found below.
 				<img width="100%" src="images/softwareArchitecture.png"/>
 
 			</p>

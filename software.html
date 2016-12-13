@@ -62,11 +62,23 @@
 				<li>Serialport: In order to communicate with the arduino that is sending pressure sensor data, as well as receiving information on our end, regarding what step should be taken nect, we use the npm node.js package called Serialport. As long as the usb connecting the arduino to the computer is connected, we can receive and send data from both sides.</li>
 			</ul>
 
+			<h2>Software Architecture</h2>
+			<p>
+				The github code for the game website can be found: <a href="https://github.com/yunhsincynthiachen/PoeDDR">
+					https://github.com/yunhsincynthiachen/PoeDDR
+				</a>
+				<br>
+				<br>
+				In terms of the software architecture, the arduino talks and sends pressure sensor data (depending on what arrows were pressed) to the backend of the website using Serialport, and then the backend sends data to the frontend using socket.io to utilize the pressure info to change the display of score and animation, depending on whether or not the correct step was stepped on. In addition, the front end sends the backend data about what each next step should be using socket.io, and then this data is sent to the arduino using Serialport to indicate which arrow LED needs to be turned on. A diagram of this can be found below.
+				<img width="100%" src="images/softwareArchitecture.png"/>
+
+			</p>
+
 			<h2>Our Final Implementation Interface</h2>
-			<p>The web game begins in the home page with a blurb about the game and instructions for how to play the game. If the user doesn't have the mechanical board, they can use their keyboard arrow keys to play the game.</p>
+			<p>The web game begins in the home page with a blurb about the game and instructions for how to play the game. In addition, they can choose between 3 song choices. If the user doesn't have the mechanical board, they can use their keyboard arrow keys to play the game.</p>
 			<img width="100%" src="images/homePage.png"/>
-			<p>Once the player, hits play, they must hit the space bar, in order to start the game. Once the game starts, the music, which we chose to be "Can't Be Tamed", by Miley Cyrus, and arrows start floating up the screen and the player must step on the corresponding step or keyboard arrow when the arrow floats and matches the top arrow. This process is illustrated in the following gif. In addition, the player can pause and play the game when they hit space bar.</p>
-			<img width="100%" src="images/softwareInterface.gif"/>
+			<p>Once the player, chooses a song, they must hit the space bar, in order to start the game. Once the game starts, the music, which they can choose between "Can't Be Tamed" by Miley Cyrus, "Just Dance" by Lady Gaga and "Work From Home" by Fifth Harmony, and arrows start floating up the screen and the player must step on the corresponding step or keyboard arrow when the arrow floats and matches the top arrow. This process is illustrated in the following gif. In addition, the player can pause and play the game when they hit space bar.</p>
+			<img width="100%" src="images/softwareinterface.gif"/>
 
 			<h2>Future Work</h2>
 			<p>In terms of future software work, we think that the design of the game could be much improved with more stylish divs, more songs, and more exact timing callibration between the animation and the arduino.</p>

@@ -259,8 +259,7 @@ h3 {
 
 .team-member {
 	width: 260px;
-	text-align: justify;
-    text-justify: inter-word;
+	text-align: center;
     margin: 20px;
 }
 
